@@ -1,0 +1,15 @@
+/Users/joonsungkim/Projects/ConsoleGL/ConsoleGL/bin/Debug/net6.0/ConsoleGL
+/Users/joonsungkim/Projects/ConsoleGL/ConsoleGL/bin/Debug/net6.0/ConsoleGL.deps.json
+/Users/joonsungkim/Projects/ConsoleGL/ConsoleGL/bin/Debug/net6.0/ConsoleGL.runtimeconfig.json
+/Users/joonsungkim/Projects/ConsoleGL/ConsoleGL/bin/Debug/net6.0/ConsoleGL.dll
+/Users/joonsungkim/Projects/ConsoleGL/ConsoleGL/bin/Debug/net6.0/ConsoleGL.pdb
+/Users/joonsungkim/Projects/ConsoleGL/ConsoleGL/obj/Debug/net6.0/ConsoleGL.csproj.AssemblyReference.cache
+/Users/joonsungkim/Projects/ConsoleGL/ConsoleGL/obj/Debug/net6.0/ConsoleGL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/joonsungkim/Projects/ConsoleGL/ConsoleGL/obj/Debug/net6.0/ConsoleGL.AssemblyInfoInputs.cache
+/Users/joonsungkim/Projects/ConsoleGL/ConsoleGL/obj/Debug/net6.0/ConsoleGL.AssemblyInfo.cs
+/Users/joonsungkim/Projects/ConsoleGL/ConsoleGL/obj/Debug/net6.0/ConsoleGL.csproj.CoreCompileInputs.cache
+/Users/joonsungkim/Projects/ConsoleGL/ConsoleGL/obj/Debug/net6.0/ConsoleGL.dll
+/Users/joonsungkim/Projects/ConsoleGL/ConsoleGL/obj/Debug/net6.0/refint/ConsoleGL.dll
+/Users/joonsungkim/Projects/ConsoleGL/ConsoleGL/obj/Debug/net6.0/ConsoleGL.pdb
+/Users/joonsungkim/Projects/ConsoleGL/ConsoleGL/obj/Debug/net6.0/ConsoleGL.genruntimeconfig.cache
+/Users/joonsungkim/Projects/ConsoleGL/ConsoleGL/obj/Debug/net6.0/ref/ConsoleGL.dll
