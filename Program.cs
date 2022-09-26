@@ -27,13 +27,23 @@ namespace ConsoleGL
             // int[] v_sys_corD = { 50, 200 };
             // ConsoleGL.drawRect(v_sys_corA.ToList(), v_sys_corB.ToList(), v_sys_corC.ToList(), v_sys_corD.ToList());
             gr_t1();
-            ConsoleGL.render();
+            /*
+            Random v_sys_random = new Random();
+            for (int v_sys_lv1 = 0; v_sys_lv1 < 2000; v_sys_lv1++)
+            {
+                int[] v_sys_centerA = { 150 + v_sys_random.Next(ConsoleGL.v_sys_screenLengthX - 300), 150 + v_sys_random.Next(ConsoleGL.v_sys_screenLengthY - 300) };
+                ConsoleGL.drawCircle(v_sys_centerA.ToList(), 10 + v_sys_random.Next(140));
+                Console.Clear();
+                ConsoleGL.render();
+                Thread.Sleep(50);
+            }
+            */
             Console.ReadKey(true);
         }
 
         public static void gr_t1()
         {
-            int v_sys_rT = 10;
+            int v_sys_rT = 1;
             int v_sys_rL = 27;
             int v_sys_rectL = 5;
             int v_sys_ln = 2;
@@ -148,6 +158,11 @@ namespace ConsoleGL
             return;
         }
 
+        public static void drawPoint(List<int> v_drawPoint_coord)
+        {
+            v_sys_coordinatePlane[v_drawPoint_coord[1]][v_drawPoint_coord[0]] = "##";
+        }
+
         public static void drawRect(List<int> v_drawRect_corA, List<int> v_drawRect_corB, List<int> v_drawRect_corC, List<int> v_drawRect_corD)
         {
             List<List<int>> v_drawRect_corList = new List<List<int>>() { v_drawRect_corA, v_drawRect_corB, v_drawRect_corC, v_drawRect_corD, v_drawRect_corA};
@@ -156,6 +171,16 @@ namespace ConsoleGL
                 drawLine(v_drawRect_corList[v_drawRect_lv1], v_drawRect_corList[v_drawRect_lv1 + 1]);
             }
             return;
+        }
+        public static void drawCircle(List<int> v_drawCircle_centerCoord, int v_drawCircle_radius)
+        {
+            for (int v_drawCircle_lv1 = v_drawCircle_centerCoord[0] - v_drawCircle_radius; v_drawCircle_lv1 <= v_drawCircle_centerCoord[0] + v_drawCircle_radius; v_drawCircle_lv1++)
+            {
+                int[] v_drawCircle_fLa = { v_drawCircle_lv1, (int) Math.Floor(v_drawCircle_centerCoord[1] + Math.Sqrt(Math.Pow(v_drawCircle_radius, 2) - Math.Pow(v_drawCircle_lv1 - v_drawCircle_centerCoord[0], 2))) };
+                int[] v_drawCircle_fLb = { v_drawCircle_lv1, (int) Math.Floor(v_drawCircle_centerCoord[1] - Math.Sqrt(Math.Pow(v_drawCircle_radius, 2) - Math.Pow(v_drawCircle_lv1 - v_drawCircle_centerCoord[0], 2))) };
+                drawPoint(v_drawCircle_fLa.ToList());
+                drawPoint(v_drawCircle_fLb.ToList());
+            }
         }
     }
 
